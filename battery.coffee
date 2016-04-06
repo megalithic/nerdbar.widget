@@ -1,16 +1,18 @@
-command: "pmset -g batt | egrep '([0-9]+\%).*' -o --colour=auto | cut -f1 -d';'"
+command: "~/.dotfiles/bin/battery-uber"
+# command: "pmset -g batt | egrep '([0-9]+\%).*' -o --colour=auto | cut -f1 -d';'"
 
 refreshFrequency: 150000 # ms
 
 render: (output) ->
-  "<i>⚡</i>#{output}"
+  "bat #{output}"
 
 style: """
   -webkit-font-smoothing: antialiased
-  font: 10px Osaka-Mono
-  top: 4px
-  right: 145px
-  color: #FABD2F
+  font: 12px Source Sans Pro
+  top: 2px
+  right: 150px
+  color: #666
   span
     color: #9C9486
+    font: 14px Source Sans Pro
 """

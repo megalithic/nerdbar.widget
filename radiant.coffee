@@ -1,15 +1,16 @@
-command: "ESC=`printf \"\e\"`; ps -A -o %cpu | awk '{s+=$1} END {printf(\"%.0f\",s/8);}'"
+command: "~/.dotfiles/bin/radiant-tmux"
 
 refreshFrequency: 2000 # ms
 
 render: (output) ->
-  "cpu <span>#{output}%</span>"
+  "<span>#{output}</span>"
 
 style: """
   -webkit-font-smoothing: antialiased
   color: #666
   font: 12px Source Sans Pro
-  right: 215px
+  text-align: center
+  width: 100%
   top: 2px
   span
     color: #7AAB7E
