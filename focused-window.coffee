@@ -1,4 +1,4 @@
-command: "echo $(/usr/local/bin/kwmc read focused)"
+command: ""
 
 refreshFrequency: 1000 # ms
 

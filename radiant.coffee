@@ -1,4 +1,4 @@
-command: "~/.dotfiles/bin/radiant-tmux"
+command: "~/.dotfiles/bin/radiant-uber"
 
 refreshFrequency: 2000 # ms
 
